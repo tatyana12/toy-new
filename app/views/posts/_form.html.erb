@@ -16,10 +16,11 @@
     <%= f.text_field :title %>
   </div>
 
-  <div class="area">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
+ 
+  
+  <div class="field">
+  <%= f.text_area :body, data: { 'no-turbolink'=>true}, :class => 'ckeditor', placeholder: "Edit the micropost..." %>
+</div>
 
   <div class="actions">
     <%= f.submit %>
